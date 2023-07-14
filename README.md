@@ -7,12 +7,26 @@ A port of [amazon-kinesis-video-streams-webrtc-sdk-js](https://github.com/awslab
 ## Installation
 
 ```sh
-yarn add react-native-aws-kinesis-webrtc
+yarn add react-native-aws-kinesis-webrtc react-native-webrtc
+```
+
+```
+npx pod-install
 ```
 
 ## Usage
 
-TODO
+See https://github.com/awslabs/amazon-kinesis-video-streams-webrtc-sdk-js.
+
+The only API difference is how you register callbacks...
+
+```typescript
+// This
+signalingClient.on('open', async () => {});
+
+// Becomes
+signalingClient.callbacks.open = async () => {};
+```
 
 ## License
 

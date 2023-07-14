@@ -38,12 +38,14 @@
     "access": "public"
   },
   "dependencies": {
-    
+    "base-64": "^1.0.0",
+    "crypto-es": "^2.0.2"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",
     "@react-native-community/eslint-config": "^3.1.0",
     "@release-it/conventional-changelog": "^5.0.0",
+    "@types/base-64": "^1.0.0",
     "@types/react": "^18.0.15",
     "@types/react-native": "0.69.5",
     "commitlint": "^11.0.0",
@@ -55,13 +57,15 @@
     "react": "18.1.0",
     "react-native": "0.70.0-rc.2",
     "react-native-builder-bob": "^0.18.3",
+    "react-native-webrtc": "^111.0.3",
     "release-it": "^15.2.0",
     "rimraf": "^3.0.2",
     "typescript": "^4.7.4"
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-native-webrtc": "*"
   },
   "husky": {
     "hooks": {
